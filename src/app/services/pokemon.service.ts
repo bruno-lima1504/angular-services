@@ -16,7 +16,7 @@ export class PokemonService {
     this.baseURL = environment.pokeApi
   }
 
-  getPokemon(pokemonName: string){
+  getPokemon(pokemonName: string):Observable<PokemonData>{
     this.pokeData = this
                     .Http
                     .get<PokemonData>

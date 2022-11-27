@@ -1,3 +1,14 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container input {
+    margin-top: 20px;
+    padding: 5px;
+}
+
 .card {
     border: 1px solid black;
     width: 250px;
@@ -6,7 +17,8 @@
     flex-direction: column;
     align-items: center;
     background-color: #232323;
-    border-radius: 10px;    
+    border-radius: 10px;
+    margin-top: 20px;    
 }
 
 .card__title h3 {
@@ -16,8 +28,12 @@
 .card__body {
     background-color: #616161;
     width: 90%;
-
     height: 65%;
+    display: flex;
+}
+
+.card__body img {
+    
 }
 
 .card__stats {    
